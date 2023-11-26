@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body{
+            margin: 0;
+        }
+
+        .container{
+            display: flex;
+            flex: 100%;
+        }
+
+        .container1{
+            flex: 80%;
+        }
+
+        .nav{
+            background-color: pink;
+            flex: 20%;
+            height: 803px;
+        }
+
+        .header, .footer{
+            background-color: yellow;
+            height: 160px;
+        }
+
+        .box{
+            height: 483px;
+            display: flex;
+        }
+
+        article{
+            flex: 80%;
+        }
+
+        aside{
+            background-color: aqua;
+            flex: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">nav</nav>
+        <div class="container1">
+            <header class="header">header</header>
+            <div class="box">
+                <article>article</article>
+                <aside>aside</aside>
+            </div>
+            <footer class="footer">footer</footer>
+        </div>
+    </div>
+</body>
+</html>
